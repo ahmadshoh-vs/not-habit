@@ -1,5 +1,9 @@
 # Not.Habit
 
+**Live demo:** https://not-habit.onrender.com
+
+> Hosted on a free plan: the first load may take up to a minute.
+
 A habit tracking web app with user registration and login.
 
 ## Features
