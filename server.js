@@ -15,7 +15,11 @@ app.use(express.json())
 // Barcha frontend fayllar server.js bilan bir papkada
 app.use(express.static(path.join(__dirname)))
 
-const SECRET = process.env.JWT_SECRET || "supersecretkey"
+const SECRET = process.env.JWT_SECRET
+if (!SECRET) {
+  console.error("JWT_SECRET is not set")
+  process.exit(1)
+}
 
 // ── API routes ──
 app.post("/register", async (req, res) => {
