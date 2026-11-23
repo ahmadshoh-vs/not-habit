@@ -34,4 +34,4 @@ A habit tracking web app with user registration and login.
    npm start
    ```
 
-4. Open http://localhost:3000
+4. Open https://not-habit.onrender.com
